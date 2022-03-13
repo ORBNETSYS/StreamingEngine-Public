@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+## [2.9.3] - 13.03.2022
+
+- Added: HLS Streaming Capability
+- Changed: Switched to FFMPEG for RTMP and HLS Streaming
+
 ## [2.9.2] - 06.03.2022
 
 - Added: Timelapse monitoring in case of broken frame grabbers
