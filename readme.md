@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Added: HLS Streaming Capability
 - Added: Service Recovery Options to restart the service on first, second and subsequent failures.
+- Added: Auto Stream transcoding for HLS
 - Changed: Switched to FFMPEG for RTMP and HLS Streaming
 
 ## [2.9.2] - 06.03.2022
