@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [2.9.98] 
 
+### Added
+* Timeline (seek bar) to embedded video players on webpages
+
+### Fixed
+* Memory leak on webpages.
+* CSS styling issues in the web application.
+  
 ## [2.9.97] 
 
 ### Added
@@ -53,7 +60,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [2.9.98] 
 
 ### Changed
-* Added dedicated **SQLite** Database
+* Added dedicated **SQLite** Database.
+
+### Fixed
+* CSS styling issues in the web application.
 
 ## [2.9.97]
 
