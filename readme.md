@@ -9,10 +9,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [2.9.98] 
 
 ### Added
-* Timeline (seek bar) to embedded video players on webpages
+* Enable AAC Empty Audio Stream setting: always-on silent AAC stream for destinations like YouTube/X.
+* Timeline (seek bar) to embedded video players on webpages.
 
 ### Fixed
 * Memory leak on webpages.
+* Outbound streams state handling.
+* Frames for memory pipe transport.
 * CSS styling issues in the web application.
   
 ## [2.9.97] 
