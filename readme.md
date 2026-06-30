@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 # Streaming Engine Service .NET Core
 
+## [4.0.19]
+
+### Added
+* Streamlink aggregation controls now always display all three aggregation buttons. Previously, only the buttons for active interfaces were shown dynamically; all three buttons are now always visible (inactive interfaces are displayed in gray).
+
+### Changed
+* Popup player failover has been improved. When the currently viewed substream becomes unavailable, the popup automatically switches to another live substream and recovers correctly when the aggregate stream returns, even if all substreams were previously offline.
+* Dynamic substream discovery has been added. Newly available substreams now appear automatically without requiring a page refresh.
+* Popup substream list now refreshes continuously, matching the behavior of the tile view. This resolves an issue where only the active substream button was displayed.
+
+### Fixed
+* Fixed aggregate stream latency displaying 0 ms during startup. Latency now remains N/A until a valid measurement is available. This fix also applies to the latency indicator in the status bar.
+* Fixed tile initialization when the configured source was offline at startup. Tiles no longer display a green status indicator with missing xFill buttons, and aggregation buttons now appear automatically once streams become available without requiring a page refresh.
+* Fixed SRT caller-mode auto-reconnect. SRT inputs are now automatically reinitialized when video streaming stops but the publishing point remains active, eliminating the need to manually stop and restart the SRT input from the UI.
+* Fixed automatic restart of WebTransport (WT) and HLS tile players after stream interruptions, allowing video playback to recover without requiring a page refresh.
+* Fixed inactive retry streams being exposed in the UI. Internal retry mechanisms are now hidden from users to reduce confusion.
+* Fixed the Last Activity column on the Active Streams page to display a human-readable date and time instead of a Unix timestamp.
+
 ## [4.0.16]
 
 ### Fixed
