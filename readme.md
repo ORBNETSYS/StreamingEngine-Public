@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 # Streaming Engine Service .NET Core
 
+## [4.0.20]
+### Added
+- **C\*\*\* Streams:**
+  - Configured setups are now automatically detected and grouped into dedicated UI sections when device issues occur: misconfigured device, outdated configuration, link-down interface, unreachable device, and orphaned setups. Each row can be discarded, which stops and removes the associated SRT input.
+  - Serial-mismatch banner appears when a configured network interface reports a different device than expected. The banner clears automatically once the correct device is reachable again.
+  - View changes dialog for outdated setups shows a side-by-side comparison of the configured stream against what the device currently reports.
+  - Local stream name validation prevents empty values, whitespace, and duplicates.
+
+### Changed
+- **C\*\*\* Streams:**
+  - Setups now remain linked to their owning device across device serial changes, preventing accidental orphaning during interface fallbacks.
+  - Set up button is disabled while a device is misconfigured, preventing new setups from being created against the wrong device.
+
 ## [4.0.19]
 
 ### Added
