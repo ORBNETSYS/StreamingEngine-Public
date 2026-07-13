@@ -6,7 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 # Streaming Engine Service .NET Core
 
-## [4.0.20]
+## [4.0.20] - 10.07.2026
+
+> **⚠ Important — before installing:** delete the C\*\*\* devices and SRT custom inputs repository files from `C:\ProgramData\ORBNET\Streaming Engine`:
+> - `C***Devices.json`
+> - `SrtInputs.json`
+
 ### Added
 - **C\*\*\* Streams:**
   - Configured setups are now automatically detected and grouped into dedicated UI sections when device issues occur: misconfigured device, outdated configuration, link-down interface, unreachable device, and orphaned setups. Each row can be discarded, which stops and removes the associated SRT input.
